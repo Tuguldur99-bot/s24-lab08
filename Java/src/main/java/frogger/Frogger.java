@@ -34,5 +34,8 @@ public class Frogger {
     public int getCurrentPosition() {
         return road.getPosition(this);
     }
-
+    public boolean recordMyself() {
+        return records.addRecord(id); 
+    }
+    
 }
