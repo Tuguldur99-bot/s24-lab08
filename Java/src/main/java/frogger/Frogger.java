@@ -9,10 +9,14 @@ public class Frogger {
 
     // Field for task 1.
     private final Road road;
-    
+    private final Records records;
+    private final FroggerID id;
+
     // Field for task 2. Anything to add/change?
-    public Frogger(Road road, int startPosition) {
+    public Frogger(Road road, int startPosition, Records records, FroggerID id) {
         this.road = road;
+        this.records = records;
+        this.id = id;
         road.placeFrogger(this, startPosition);
     }
 
